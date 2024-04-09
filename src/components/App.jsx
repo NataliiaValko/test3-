@@ -37,7 +37,7 @@ function App() {
   };
 
   const deleteContact = deletedId => {
-    setContacts(prev => prev.filter(({ id }) => id !== deletedId));
+    setContacts(prev => prev.filter(({ name }) => name !== deletedId));
   };
 
   const addContact = contact => {

@@ -6,12 +6,11 @@ const ContactList = ({ contacts, deleteContact }) => {
   return (
     <>
       <ul className={styles.list}>
-        {contacts.map(({ name, number, id }) => (
-          <li className={styles.item} key={id}>
+        {contacts.map(({ name, number }) => (
+          <li className={styles.item} key={name}>
             <Contact
               name={name}
               number={number}
-              id={id}
               deleteContact={deleteContact}
             />
           </li>

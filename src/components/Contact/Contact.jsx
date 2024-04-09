@@ -1,8 +1,8 @@
 import styles from './Contact.module.css';
 
-const Contact = ({ name, number, id, deleteContact }) => {
+const Contact = ({ name, number, deleteContact }) => {
   const handleDelete = () => {
-    deleteContact(id);
+    deleteContact(name);
   };
 
   return (
